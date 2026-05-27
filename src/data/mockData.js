@@ -45,3 +45,35 @@ export const devices = RAW_DEVICES.map((d) => ({
 }));
 
 export const pollIntervalMin = 5;
+
+export function createDevice({ name, location, icon, deviceId }) {
+  const id = `dev-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`;
+  const hasSensor = Boolean(deviceId && deviceId.trim());
+  if (!hasSensor) {
+    return {
+      id,
+      name,
+      location,
+      icon,
+      status: "offline",
+      current: { lightPct: null, tempC: null },
+      lastReadAgoMin: null,
+      history24h: [],
+      recent: [],
+    };
+  }
+  // Sensor bound — seed with neutral placeholders until the real ESP32 reports in.
+  const initLight = 50;
+  const initTemp = 22;
+  return {
+    id,
+    name,
+    location,
+    icon,
+    status: "online",
+    current: { lightPct: initLight, tempC: initTemp },
+    lastReadAgoMin: 0,
+    history24h: makeHistory(initLight, initTemp),
+    recent: makeRecent(initLight, initTemp),
+  };
+}

@@ -6,13 +6,16 @@ import FilterTabs from "./components/FilterTabs";
 import DeviceCard from "./components/DeviceCard";
 import AddDeviceCard from "./components/AddDeviceCard";
 import DeviceDetail from "./components/DeviceDetail";
-import { devices } from "./data/mockData";
+import AddDeviceForm from "./components/AddDeviceForm";
+import { devices as initialDevices, createDevice } from "./data/mockData";
 import "./App.css";
 
 export default function App() {
+  const [devices, setDevices] = useState(initialDevices);
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("all");
   const [selectedId, setSelectedId] = useState("monstera");
+  const [view, setView] = useState("list"); // "list" | "detail" | "add"
   const [openId, setOpenId] = useState(null);
 
   const counts = useMemo(
@@ -21,7 +24,7 @@ export default function App() {
       warning: devices.filter((d) => d.status === "warning").length,
       offline: devices.filter((d) => d.status === "offline").length,
     }),
-    [],
+    [devices],
   );
 
   const filtered = useMemo(() => {
@@ -34,16 +37,38 @@ export default function App() {
           d.name.toLowerCase().includes(q) ||
           d.location.toLowerCase().includes(q),
       );
-  }, [search, filter]);
+  }, [devices, search, filter]);
 
-  const openDevice = openId ? devices.find((d) => d.id === openId) : null;
-  if (openDevice) {
-    return <DeviceDetail device={openDevice} onBack={() => setOpenId(null)} />;
+  if (view === "add") {
+    return (
+      <AddDeviceForm
+        onSubmit={(input) => {
+          const newDevice = createDevice(input);
+          setDevices((prev) => [...prev, newDevice]);
+          setSelectedId(newDevice.id);
+          setView("list");
+        }}
+        onCancel={() => setView("list")}
+      />
+    );
+  }
+
+  if (view === "detail") {
+    const openDevice = devices.find((d) => d.id === openId);
+    if (openDevice) {
+      return (
+        <DeviceDetail
+          device={openDevice}
+          onBack={() => setView("list")}
+        />
+      );
+    }
   }
 
   const handleOpen = (id) => {
     setSelectedId(id);
     setOpenId(id);
+    setView("detail");
   };
 
   return (
@@ -63,7 +88,7 @@ export default function App() {
               onClick={() => handleOpen(d.id)}
             />
           ))}
-          <AddDeviceCard />
+          <AddDeviceCard onClick={() => setView("add")} />
         </div>
       </div>
     </div>

@@ -134,6 +134,110 @@
   font-size: 14px;
 }
 
+/* Add-device form */
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0 4px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.form-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+}
+.form-label-hint {
+  font-weight: 400;
+  color: var(--ink-muted);
+}
+.form-input {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  font: inherit;
+  font-size: 14px;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.12s;
+}
+.form-input::placeholder { color: var(--ink-muted); }
+.form-input:focus { border-color: var(--green); }
+.form-input-error { border-color: var(--danger); }
+.form-error {
+  font-size: 12px;
+  color: var(--danger);
+}
+.form-hint {
+  font-size: 12px;
+  color: var(--ink-muted);
+}
+
+.icon-picker {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+.icon-option {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+  cursor: pointer;
+  color: var(--ink-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.12s, background 0.12s, color 0.12s;
+}
+.icon-option:hover { border-color: var(--ink-muted); color: var(--ink); }
+.icon-option-selected {
+  border-color: var(--green);
+  background: var(--green-soft);
+  color: var(--green);
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  padding: 6px 4px 0;
+}
+.btn-secondary,
+.btn-primary {
+  padding: 10px 22px;
+  border-radius: var(--radius);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  transition: background 0.12s, border-color 0.12s;
+}
+.btn-secondary {
+  background: var(--bg);
+  color: var(--ink);
+}
+.btn-secondary:hover { background: var(--surface); }
+.btn-primary {
+  background: var(--green);
+  color: white;
+  border-color: var(--green);
+}
+.btn-primary:hover { background: #258a66; border-color: #258a66; }
+
+@media (max-width: 480px) {
+  .icon-picker { grid-template-columns: repeat(3, 1fr); }
+  .form-actions { flex-direction: column-reverse; }
+  .btn-secondary,
+  .btn-primary { width: 100%; }
+}
+
 /* Pills (shared) */
 .pill {
   display: inline-block;
