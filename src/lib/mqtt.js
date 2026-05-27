@@ -57,9 +57,10 @@ export function useMqttSensors(setDevices) {
         return; // bad JSON → drop
       }
 
-      const lightPct = Number(parsed.light);
-      const tempC    = Number(parsed.temp);
-      if (!Number.isFinite(lightPct) || !Number.isFinite(tempC)) return;
+      const lightPct = Number(parsed.light_pct);
+      if (!Number.isFinite(lightPct)) return;          // light_pct is required
+      const rawTemp = Number(parsed.temp);
+      const tempC = Number.isFinite(rawTemp) ? rawTemp : null;
 
       const now = new Date();
       const stamp = hhmm(now);
@@ -68,13 +69,21 @@ export function useMqttSensors(setDevices) {
         prev.map((d) => {
           if (d.deviceId !== deviceId) return d;
           const prevHistory = d.history24h ?? [];
+          // Preserve last-known temp if this message doesn't include one.
+          const effectiveTemp = tempC ?? d.current?.tempC ?? null;
           return {
             ...d,
             status: "online",
-            current: { lightPct, tempC },
+            current: { lightPct, tempC: effectiveTemp },
             lastSeenAt: now.getTime(),
-            recent: [{ time: stamp, lightPct, tempC }, ...(d.recent ?? [])].slice(0, 5),
-            history24h: [...prevHistory.slice(-23), { t: "now", lightPct, tempC }],
+            recent: [
+              { time: stamp, lightPct, tempC: effectiveTemp },
+              ...(d.recent ?? []),
+            ].slice(0, 5),
+            history24h: [
+              ...prevHistory.slice(-23),
+              { t: "now", lightPct, tempC: effectiveTemp },
+            ],
           };
         }),
       );
