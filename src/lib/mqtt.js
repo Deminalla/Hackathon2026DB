@@ -2,8 +2,12 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import mqtt from "mqtt";
 import { BROKER_URL, TOPIC_PATTERN, MQTT_USERNAME, MQTT_PASSWORD } from "../config";
 
-function hhmm(date) {
-  return `${String(date.getHours()).padStart(2, "0")}:${String(date.getMinutes()).padStart(2, "0")}`;
+function hhmmssms(date) {
+  const pad = (n, w = 2) => String(n).padStart(w, "0");
+  return (
+    `${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}` +
+    `.${pad(date.getMilliseconds(), 3)}`
+  );
 }
 
 // Subscribes to TOPIC_PATTERN and dispatches incoming messages into the device
@@ -73,7 +77,7 @@ export function useMqttSensors(setDevices) {
       console.log("[mqtt] message", { topic, payload: parsed });
 
       const now = new Date();
-      const stamp = hhmm(now);
+      const stamp = hhmmssms(now);
 
       // Single-card mode: every valid message updates every device in state
       // (there's only one). When we re-introduce multi-device routing we'll
