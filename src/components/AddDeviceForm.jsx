@@ -1,6 +1,40 @@
 import { useState } from "react";
 import Header from "./Header";
 import { PlantIcon } from "./PlantIcons";
+import plants from "../data/plants.json";
+
+// Unique plant names sourced from the plant database. Computed once at module
+// load. Users can pick from this list (datalist autocomplete) or type a custom
+// name — the input stays freeform.
+const PLANT_NAMES = Array.from(new Set(plants.map((p) => p.name))).sort((a, b) =>
+  a.localeCompare(b),
+);
+
+// Common rooms / spots where someone might place a plant. Same freeform-with-
+// suggestions pattern as PLANT_NAMES — users can pick or type a custom location.
+const LOCATIONS = [
+  "Balcony",
+  "Bathroom",
+  "Bedroom",
+  "Bookshelf",
+  "Conservatory",
+  "Dining room",
+  "Garage",
+  "Garden",
+  "Greenhouse",
+  "Hallway",
+  "Kitchen",
+  "Kitchen windowsill",
+  "Living room",
+  "Office",
+  "Office desk",
+  "Patio",
+  "Porch",
+  "Study",
+  "Sunroom",
+  "Terrace",
+  "Window sill",
+];
 
 function ArrowLeftIcon() {
   return (
@@ -64,12 +98,19 @@ export default function AddDeviceForm({ brokerStatus, onSubmit, onCancel }) {
             <span className="form-label">Plant name</span>
             <input
               type="text"
+              list="plant-name-suggestions"
               className={`form-input ${errors.name ? "form-input-error" : ""}`}
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="e.g. Aloe vera"
+              placeholder="Start typing or pick from the list…"
+              autoComplete="off"
               autoFocus
             />
+            <datalist id="plant-name-suggestions">
+              {PLANT_NAMES.map((n) => (
+                <option key={n} value={n} />
+              ))}
+            </datalist>
             {errors.name && <span className="form-error">{errors.name}</span>}
           </label>
 
@@ -77,11 +118,18 @@ export default function AddDeviceForm({ brokerStatus, onSubmit, onCancel }) {
             <span className="form-label">Location</span>
             <input
               type="text"
+              list="location-suggestions"
               className={`form-input ${errors.location ? "form-input-error" : ""}`}
               value={location}
               onChange={(e) => setLocation(e.target.value)}
-              placeholder="e.g. Bedroom shelf"
+              placeholder="Pick a room or type a custom spot…"
+              autoComplete="off"
             />
+            <datalist id="location-suggestions">
+              {LOCATIONS.map((l) => (
+                <option key={l} value={l} />
+              ))}
+            </datalist>
             {errors.location && <span className="form-error">{errors.location}</span>}
           </label>
 

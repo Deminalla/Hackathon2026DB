@@ -1,0 +1,4770 @@
+[
+  {
+    "name": "Aloe Vera",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Basil",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil evenly moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Snake Plant",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "No"
+  },
+  {
+    "name": "Lavender",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "No"
+  },
+  {
+    "name": "Cactus",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Rosemary",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "No"
+  },
+  {
+    "name": "Mint",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Thyme",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Peace Lily",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water when soil feels dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Spider Plant",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "indirect sunlight",
+    "watering": "Keep soil slightly moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Parsley",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Fern (Boston)",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Bamboo Palm",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Money Plant",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Jade Plant",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "indirect sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Orchids",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Cilantro",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Dill",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil evenly moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Chives",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Oregano",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Pothos",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Rubber Plant",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water when soil feels dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Bougainvillea",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Fiddle Leaf Fig",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Sage",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Cosmos",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil feels dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Geranium",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Marigold",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Zinnia",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Hibiscus",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Begonia",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Chrysanthemum",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil feels dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Daffodil",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Sunflower",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Tulip",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Peony",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Jasmine",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Ivy",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Keep soil slightly moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Nasturtium",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Petunia",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Carnation",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Snapdragon",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Pansy",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil evenly moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Sweet Pea",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Morning Glory",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Verbena",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Gerbera Daisy",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Anemone",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil evenly moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Hyacinth",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Crocus",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Dandelion",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Foxglove",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Bluebell",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil slightly moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Camellia",
+    "growth": "slow",
+    "soil": "acidic",
+    "sunlight": "partial sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Acidic"
+  },
+  {
+    "name": "Poppy",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Nasturtium",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Magnolia",
+    "growth": "slow",
+    "soil": "acidic",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Acidic"
+  },
+  {
+    "name": "Bougainvillea",
+    "growth": "moderate",
+    "soil": "acidic",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Holly",
+    "growth": "slow",
+    "soil": "acidic",
+    "sunlight": "partial sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Acidic"
+  },
+  {
+    "name": "Gardenia",
+    "growth": "slow",
+    "soil": "acidic",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Acidic"
+  },
+  {
+    "name": "Azalea",
+    "growth": "moderate",
+    "soil": "acidic",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Acidic"
+  },
+  {
+    "name": "Clivia",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Tulsi (Holy Basil)",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Chrysanthemum",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil feels dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Canna Lily",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Dahlia",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Daisy",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Eucalyptus",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil feels dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Lotus",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Bamboo",
+    "growth": "moderate",
+    "soil": "acidic",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Acidic"
+  },
+  {
+    "name": "Orchid Cactus",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Bromeliad",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Succulent",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Iris",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Lotus Bamboo",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Hosta",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Echeveria",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "indirect sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Catmint",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Coneflower",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Lamb's Ear",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Petunia",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil feels dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Snapdragon",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Alyssum",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Pansy",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Fuchsia",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Impatiens",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Nasturtium",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Begonia",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Keep soil evenly moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Dianthus",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Verbena",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Phlox",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Lobelia",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Geranium",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Salvia",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Zinnia",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Morning Glory",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Hollyhock",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Aster",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Sunflower",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Black-eyed Susan",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Dahlia",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Marigold",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Sweet Pea",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Calendula",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Candytuft",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Larkspur",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Shasta Daisy",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Periwinkle",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Coral Bells",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Bleeding Heart",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Sweet Alyssum",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Balloon Flower",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Japanese Anemone",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Veronica",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Sedum",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Helenium",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Astilbe",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Coreopsis",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Columbine",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Globe Thistle",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Lupine",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Blanket Flower",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Toad Lily",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Russian Sage",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Bee Balm",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Speedwell",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Catnip",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Lavender",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Rosemary",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Thyme",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Sage",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Parsley",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil evenly moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Cilantro",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Dill",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Chives",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil evenly moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Oregano",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Tarragon",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Bay Laurel",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "partial sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Lemon Balm",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Fennel",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Chamomile",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Tarragon",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Lemongrass",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Stevia",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Marjoram",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "No"
+  },
+  {
+    "name": "Spider Plant",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "No"
+  },
+  {
+    "name": "Peace Lily",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "No"
+  },
+  {
+    "name": "Rubber Plant",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "No"
+  },
+  {
+    "name": "ZZ Plant",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "indirect sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "No"
+  },
+  {
+    "name": "Pothos",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "No"
+  },
+  {
+    "name": "Philodendron",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "No"
+  },
+  {
+    "name": "Monstera",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "No"
+  },
+  {
+    "name": "Calathea",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "No"
+  },
+  {
+    "name": "Fern (Boston Fern)",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "No"
+  },
+  {
+    "name": "Croton",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "No"
+  },
+  {
+    "name": "Dieffenbachia",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "No"
+  },
+  {
+    "name": "Dracaena",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "indirect sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "No"
+  },
+  {
+    "name": "Bamboo Palm",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "No"
+  },
+  {
+    "name": "Areca Palm",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "No"
+  },
+  {
+    "name": "Majesty Palm",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "No"
+  },
+  {
+    "name": "Bird of Paradise",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "No"
+  },
+  {
+    "name": "Orchids",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "No"
+  },
+  {
+    "name": "Anthurium",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "No"
+  },
+  {
+    "name": "Jade Plant",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "indirect sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "No"
+  },
+  {
+    "name": "Chinese Evergreen",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Peperomia",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Ficus Tree",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Succulents (General)",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Echeveria",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Haworthia",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "indirect sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "String of Pearls",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "indirect sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Jade Pothos",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Swedish Ivy",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Wandering Jew",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Hoya (Wax Plant)",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "indirect sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "African Violet",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Begonia",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Impatiens",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Petunia",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Marigold",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Lobelia",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Snapdragon",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Zinnia",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Nasturtium",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Sunflower",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Dahlia",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Begonia (Outdoor)",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Calendula",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Coneflower",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Petunia (Trailing)",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Pansy",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Geranium",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Fuchsia",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Sweet Pea",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Begonia (Indoor)",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Lobelia",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Chrysanthemum",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Clematis",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Dianthus",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Bluebell",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Ageratum",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Calla Lily",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Cineraria",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Heliotrope",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Tuberose",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Gazania",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Portulaca",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Coleus",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Dusty Miller",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Dianella",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Lantana",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Salvia",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Phlox",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Poppy",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Amaryllis",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Morning Glory",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Yucca",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Acalypha",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Viola",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Jasmine (Outdoor)",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Sweet William",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Foxglove",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Snapdragon",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Hollyhock",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Campanula",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Cosmos",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Coreopsis",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Black-Eyed Susan",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Bachelor's Button",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Balloon Flower",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "partial sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Columbine",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "partial sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Bleeding Heart",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Sea Holly",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Bellflower",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Daylily",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Yarrow",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Aster",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Feverfew",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Rudbeckia",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Shasta Daisy",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Echinacea",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Periwinkle",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Calendula",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Marigold",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Candytuft",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Blanket Flower",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Alyssum",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Sweet Alyssum",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Hosta",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Ice Plant",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Sedum",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Neem Tree",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Peepal Tree (Bodhi Tree)",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Banyan Tree (Bargad)",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Kikar Tree (Acacia)",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Sheesham Tree",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Gul Mohar (Flame Tree)",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Amaltas (Golden Shower)",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Date Palm (Khajoor)",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Eucalyptus",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil feels dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Ber Tree (Indian Jujube)",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil feels dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Ageratum",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Beggonia (Outdoor)",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Cineraria",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Gazania",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil feels dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Heliotrope",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Poppy",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Tuberose",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Viola",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Amaryllis",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Salvia",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Camellia",
+    "growth": "moderate",
+    "soil": "acidic",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Bromeliad",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Chrysanthemum (Outdoor)",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Coleus",
+    "growth": "moderate",
+    "soil": "acidic",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Tarragon",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Fuchsia",
+    "growth": "moderate",
+    "soil": "acidic",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Japanese Maple",
+    "growth": "slow",
+    "soil": "acidic",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Echinacea",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Euphorbia",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Phlox",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Zinnia",
+    "growth": "fast",
+    "soil": "acidic",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Alyssum",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Hibiscus",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Clematis",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Pansy",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Pineapple Sage",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Cucumbers",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Maranta (Prayer Plant)",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "African Violet",
+    "growth": "moderate",
+    "soil": "acidic",
+    "sunlight": "indirect sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Kalanchoe",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Pilea",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "indirect sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Lobelia",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Hosta",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Pothos (Golden Pathos)",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "indirect sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Dracaena",
+    "growth": "moderate",
+    "soil": "acidic",
+    "sunlight": "partial sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Areca Palm",
+    "growth": "slow",
+    "soil": "loamy",
+    "sunlight": "indirect sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Calla Lily",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Basil",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Ficus Benjamina",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Dahlia",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Mimosa",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "No"
+  },
+  {
+    "name": "Lavender (English)",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Petunia",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Zucchini",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Chili Pepper",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Radish",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Sunflower",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Grape Vine",
+    "growth": "moderate",
+    "soil": "acidic",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Cherry Blossom",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Begonia",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Peony",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Marigold",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Coleus",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Jasmine",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Gardenia",
+    "growth": "moderate",
+    "soil": "acidic",
+    "sunlight": "indirect sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "No"
+  },
+  {
+    "name": "Pine",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil feels dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Lily of the Valley",
+    "growth": "slow",
+    "soil": "acidic",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Hops",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Cabbage",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Tomato",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular Watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Bergamot",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Crocus",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Wisteria",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Cilantro",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Strawberry",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Sage",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Dandelion",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Lobelia",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Chrysanthemum",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Poppy",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Snapdragon",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Borage",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Lemon Balm",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Sweet Pea",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Raspberry",
+    "growth": "moderate",
+    "soil": "acidic",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Hibiscus",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Fennel",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Cornflower",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Pineapple",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Lavender (French)",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Acorn Squash",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Apple Tree",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Bamboo Orchid",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Balsam",
+    "growth": "fast",
+    "soil": "moist",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Banana Plant",
+    "growth": "fast",
+    "soil": "moist",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Beetroot",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Bellflower",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Blackcurrant",
+    "growth": "moderate",
+    "soil": "acidic",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Bok Choy",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Brassica",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Butternut Squash",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Cabbage",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Calendula",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Camellia",
+    "growth": "slow",
+    "soil": "acidic",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Carrot",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Catmint",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Chayote",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Cherry Blossom",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Chestnut",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Clementine",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Clove",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Cocoa Tree",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Corn",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Cucumber",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Currant",
+    "growth": "moderate",
+    "soil": "acidic",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Dandelion",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Date Palm",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Dragon Fruit",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Eggplant",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Elderberry",
+    "growth": "fast",
+    "soil": "moist",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Fennel",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Fig Tree",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Grape Vine",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Green Bean",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Hops",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Jackfruit",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Jasmine (Indoor)",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Jatropha",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Kiwi",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Lady's Mantle",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Lemon Tree",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Litchi",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Lychee",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Mallow",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Mango",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Moringa",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Mulberry",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Mustard",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Nectarine",
+    "growth": "slow",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Olive Tree",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Acacia",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Acanthus",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Alstroemeria",
+    "growth": "slow",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Amaranth",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Anigozanthos (Kangaroo Paw)",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Anthurium",
+    "growth": "slow",
+    "soil": "moist",
+    "sunlight": "indirect sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Aquilegia (Columbine)",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Arum Lily",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Aztec Lily",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "partial sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Balsam",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Barberry",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Bellflower",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Bougainvillea",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Brachychiton (Bottle Tree)",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Brassica",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Calla Lily",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Camellia",
+    "growth": "slow",
+    "soil": "acidic",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Cananga (Ylang-Ylang)",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Carrot Plant",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Cestrum",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Chayote",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "No"
+  },
+  {
+    "name": "Chestnut",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Cineraria",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Cockscomb (Celosia)",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Coneflower",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Coreopsis",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Cress",
+    "growth": "fast",
+    "soil": "moist",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Croton",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Cyclamen",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "indirect sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Daffodil",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Dahlia",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Date Palm",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Devil's Ivy",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Dianthus",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Echinacea",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Elderberry",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Fennel",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Ficus Microcarpa",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Foxglove",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Gardenia",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Grape Vine",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Guava",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Heliotrope",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Hops",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Ixia",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Jacaranda",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Jatropha",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Jasmine (Indoor)",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "indirect sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Kalanchoe",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Kiwi Vine",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Knautia",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "No"
+  },
+  {
+    "name": "Lavender (French)",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Lemon Balm",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Lemon Tree",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Liatris",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Lilac",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Lobelia",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Luffa",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Magnolia",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Malva (Mallow)",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Mango",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Maranta (Prayer Plant)",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "indirect sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Mimosa",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Morning Glory",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Moringa",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Nasturtium",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Neoregalia (Bromeliad)",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "indirect sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Nettle",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Olive Tree",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Oregano",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Passionflower",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Peony",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Pepper Plant",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Periwinkle",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Phlox",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Pomegranate",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Potato Vine",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Pothos (Golden Pathos)",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Protea",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Purslane",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Quince",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Red Hot Poker (Kniphofia)",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Red-leafed Maple",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Rhododendron",
+    "growth": "slow",
+    "soil": "acidic",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Rudbeckia",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Sage",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Salvia",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Snowdrop",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Spider Flower",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Star Jasmine",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Strawberry Plant",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Sweet Basil",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Sweet Potato Vine",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Taro",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Thyme",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Tiger Lily",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Tuberose",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Verbena",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Violet",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "indirect sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Wisteria",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Yucca",
+    "growth": "slow",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Zebra Plant",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Zephyranthes (Rain Lily)",
+    "growth": "fast",
+    "soil": "acidic",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Bamboo Orchid",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "indirect sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Buckwheat",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Cabbage Palm",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Camelina",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "No"
+  },
+  {
+    "name": "Dandelion",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Elderflower",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "No"
+  },
+  {
+    "name": "Epazote",
+    "growth": "fast",
+    "soil": "moist",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Fern (Maidenhair)",
+    "growth": "slow",
+    "soil": "moist",
+    "sunlight": "indirect sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Galangal",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Globe Thistle",
+    "growth": "slow",
+    "soil": "moist",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Hummingbird Sage",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Indian Cress",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Japanese Maple",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Lacandonian",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "No"
+  },
+  {
+    "name": "Lamb's Ear",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Lemon Grass",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Lilac Bush",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Mandevilla",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Marigold (African)",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Mayapple",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Nandina (Heavenly Bamboo)",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Nutmeg",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Orchid (Vanilla)",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "No"
+  },
+  {
+    "name": "Peepal Tree",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Plumeria",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Quaking Aspen",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Quinoa",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "No"
+  },
+  {
+    "name": "Red Maple",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Redwood",
+    "growth": "slow",
+    "soil": "moist",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "River Birch",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Rose of Sharon",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Rosemary Mint",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "No"
+  },
+  {
+    "name": "Sago Palm",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Scabiosa (Pincushion Flower)",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Scilla",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Sedge",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Silene (Catchfly)",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "No"
+  },
+  {
+    "name": "Silverbell Tree",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Soursop",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "No"
+  },
+  {
+    "name": "Stevia",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Sugarcane",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Tansy",
+    "growth": "slow",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "No"
+  },
+  {
+    "name": "Teak",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Themeda (Kangaroo Grass)",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Tobacco Plant",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, well-drained soil",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Tuberose (Polianthes)",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Water Lily",
+    "growth": "slow",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Regular, moist soil",
+    "fertilization": "No"
+  },
+  {
+    "name": "Wattle",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil feels dry",
+    "fertilization": "No"
+  },
+  {
+    "name": "Yew",
+    "growth": "slow",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Zea Mays (Corn)",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Zebra Grass",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Zoysia Grass",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Achillea (Yarrow)",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Ageratum",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil slightly moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Angelonia",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Armeria (Thrift)",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Bearded Iris",
+    "growth": "slow",
+    "soil": "sandy",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil evenly moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Bergamot",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Bigleaf Hydrangea",
+    "growth": "moderate",
+    "soil": "acidic",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Black Currant",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Water when soil feels dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Black-Eyed Susan",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Blazing Star",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Bloodroot",
+    "growth": "slow",
+    "soil": "moist",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil slightly moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Bluebell",
+    "growth": "slow",
+    "soil": "moist",
+    "sunlight": "partial sunlight",
+    "watering": "Water when soil feels dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Borage",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "No"
+  },
+  {
+    "name": "Calendula",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "California Poppy",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Carob Tree",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Catmint",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Chives",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil evenly moist",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Chinese Lantern Plant",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Water when soil feels dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Clematis",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Clover",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "No"
+  },
+  {
+    "name": "Coltsfoot",
+    "growth": "slow",
+    "soil": "moist",
+    "sunlight": "partial sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Daffodils",
+    "growth": "slow",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Daisy Fleabane",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Dogwood Tree",
+    "growth": "slow",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Dragonfruit Cactus",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "No"
+  },
+  {
+    "name": "Engelmann Spruce",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil feels dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Fairy Lantern",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil slightly moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Fritillaria",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "partial sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "No"
+  },
+  {
+    "name": "Galax",
+    "growth": "moderate",
+    "soil": "moist",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil evenly moist",
+    "fertilization": "No"
+  },
+  {
+    "name": "Ginkgo",
+    "growth": "slow",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Grape Hyacinth",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Guar",
+    "growth": "fast",
+    "soil": "sandy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "No"
+  },
+  {
+    "name": "Gumwood Tree",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Goldenrods",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Goldenseal",
+    "growth": "slow",
+    "soil": "moist",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Heliopsis",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "No"
+  },
+  {
+    "name": "Henbane",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil feels dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Heracleum (Cow Parsnip)",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Hops Vine",
+    "growth": "fast",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Indian Grass",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Islander (Agave)",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "No"
+  },
+  {
+    "name": "Ironwood",
+    "growth": "slow",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Organic"
+  },
+  {
+    "name": "Jerusalem Artichoke",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "full sunlight",
+    "watering": "Water when soil is dry",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Larkspur",
+    "growth": "moderate",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil moist",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Laelia Orchid",
+    "growth": "slow",
+    "soil": "well-drained",
+    "sunlight": "indirect sunlight",
+    "watering": "Keep soil consistently moist",
+    "fertilization": "No"
+  },
+  {
+    "name": "Lamb's Ear",
+    "growth": "moderate",
+    "soil": "sandy",
+    "sunlight": "partial sunlight",
+    "watering": "Keep soil slightly moist",
+    "fertilization": "No"
+  },
+  {
+    "name": "Lavender (English)",
+    "growth": "moderate",
+    "soil": "well-drained",
+    "sunlight": "full sunlight",
+    "watering": "Let soil dry between watering",
+    "fertilization": "Balanced"
+  },
+  {
+    "name": "Ligustrum",
+    "growth": "fast",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Water when topsoil is dry",
+    "fertilization": "Low-nitrogen"
+  },
+  {
+    "name": "Lilac Tree",
+    "growth": "slow",
+    "soil": "loamy",
+    "sunlight": "partial sunlight",
+    "watering": "Water weekly",
+    "fertilization": "Balanced"
+  }
+]
