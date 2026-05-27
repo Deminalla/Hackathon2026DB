@@ -74,6 +74,7 @@
 
 /* MQTT broker pill in the global header */
 .broker-pill { padding: 4px 10px; border-radius: 999px; background: var(--surface); }
+.broker-green  { background: var(--green-soft); color: #1e6b4e; font-weight: 500; }
 .broker-green  .status-dot { background: var(--green); }
 .broker-amber  .status-dot { background: var(--amber); animation: broker-pulse 1.4s ease-in-out infinite; }
 .broker-danger .status-dot { background: var(--danger); }

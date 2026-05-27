@@ -18,7 +18,7 @@ function GearIcon() {
 
 const BROKER_LABELS = {
   connecting:   { label: "Connecting…",      tone: "amber"  },
-  connected:    { label: "Broker connected", tone: "green"  },
+  connected:    { label: "Broker connected",        tone: "green"  },
   reconnecting: { label: "Reconnecting…",    tone: "amber"  },
   disconnected: { label: "Disconnected",     tone: "muted"  },
   error:        { label: "Connection error", tone: "danger" },
