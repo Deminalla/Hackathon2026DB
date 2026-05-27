@@ -1,41 +1,47 @@
-// Mock readings stand-in for the ESP32 feed. When the device is live, replace
-// this module with a hook that fetches the same shape — components stay unchanged.
+// Mock device fleet. When the ESP32s are live, swap this module for a hook
+// that returns the same shape — components stay unchanged.
 
-export const current = { lightPct: 64, tempC: 23 };
-export const lastReadAgoMin = 2;
+const HOUR_SHAPE = [
+  0.08, 0.05, 0.05, 0.05, 0.08, 0.18,
+  0.35, 0.55, 0.75, 0.95, 1.00, 0.90,
+  0.85, 0.95, 0.90, 0.85, 0.85, 0.88,
+  0.80, 0.50, 0.25, 0.12, 0.06,
+];
+
+function makeHistory(currentLight, currentTemp) {
+  const peak = Math.min(100, Math.max(currentLight * 1.3, currentLight + 15, 30));
+  const hourly = HOUR_SHAPE.map((f, i) => ({
+    t: `${String(i).padStart(2, "0")}:00`,
+    lightPct: Math.max(0, Math.min(100, Math.round(peak * f))),
+    tempC: Math.round(currentTemp - 2 + f * 4),
+  }));
+  hourly.push({ t: "now", lightPct: currentLight, tempC: currentTemp });
+  return hourly;
+}
+
+function makeRecent(currentLight, currentTemp) {
+  const lightShifts = [0, 3, 8, 12, 5];
+  const tempShifts  = [0, 1, 2, 3, 1];
+  const times = ["14:35", "14:30", "14:25", "14:20", "14:15"];
+  return times.map((time, i) => ({
+    time,
+    lightPct: Math.max(0, Math.min(100, currentLight + lightShifts[i])),
+    tempC: Math.max(0, currentTemp + tempShifts[i]),
+  }));
+}
+
+const RAW_DEVICES = [
+  { id: "monstera", name: "Monstera",    location: "Living room",        icon: "monstera", status: "online",  current: { lightPct: 64, tempC: 23 }, lastReadAgoMin: 2 },
+  { id: "basil",    name: "Basil",       location: "Kitchen windowsill", icon: "sprout",   status: "warning", current: { lightPct: 82, tempC: 31 }, lastReadAgoMin: 1 },
+  { id: "ficus",    name: "Ficus",       location: "Office desk",        icon: "tree",     status: "online",  current: { lightPct: 31, tempC: 21 }, lastReadAgoMin: 3 },
+  { id: "snake",    name: "Snake plant", location: "Bedroom",            icon: "spike",    status: "online",  current: { lightPct: 14, tempC: 19 }, lastReadAgoMin: 4 },
+  { id: "cactus",   name: "Cactus",      location: "Balcony",            icon: "cactus",   status: "offline", current: { lightPct: null, tempC: null }, lastReadAgoMin: null },
+];
+
+export const devices = RAW_DEVICES.map((d) => ({
+  ...d,
+  history24h: d.status === "offline" ? [] : makeHistory(d.current.lightPct, d.current.tempC),
+  recent:     d.status === "offline" ? [] : makeRecent(d.current.lightPct, d.current.tempC),
+}));
+
 export const pollIntervalMin = 5;
-
-export const history24h = [
-  { t: "00:00", lightPct: 5,  tempC: 21 },
-  { t: "01:00", lightPct: 3,  tempC: 20 },
-  { t: "02:00", lightPct: 3,  tempC: 20 },
-  { t: "03:00", lightPct: 3,  tempC: 20 },
-  { t: "04:00", lightPct: 5,  tempC: 20 },
-  { t: "05:00", lightPct: 14, tempC: 20 },
-  { t: "06:00", lightPct: 28, tempC: 21 },
-  { t: "07:00", lightPct: 42, tempC: 22 },
-  { t: "08:00", lightPct: 58, tempC: 23 },
-  { t: "09:00", lightPct: 72, tempC: 24 },
-  { t: "10:00", lightPct: 78, tempC: 25 },
-  { t: "11:00", lightPct: 70, tempC: 26 },
-  { t: "12:00", lightPct: 65, tempC: 27 },
-  { t: "13:00", lightPct: 72, tempC: 28 },
-  { t: "14:00", lightPct: 60, tempC: 27 },
-  { t: "15:00", lightPct: 56, tempC: 26 },
-  { t: "16:00", lightPct: 58, tempC: 25 },
-  { t: "17:00", lightPct: 68, tempC: 25 },
-  { t: "18:00", lightPct: 62, tempC: 24 },
-  { t: "19:00", lightPct: 38, tempC: 23 },
-  { t: "20:00", lightPct: 18, tempC: 22 },
-  { t: "21:00", lightPct: 8,  tempC: 22 },
-  { t: "22:00", lightPct: 4,  tempC: 21 },
-  { t: "now",   lightPct: 64, tempC: 23 },
-];
-
-export const recent = [
-  { time: "14:35", lightPct: 64, tempC: 23 },
-  { time: "14:30", lightPct: 68, tempC: 24 },
-  { time: "14:25", lightPct: 77, tempC: 26 },
-  { time: "14:20", lightPct: 81, tempC: 29 },
-  { time: "14:15", lightPct: 72, tempC: 27 },
-];

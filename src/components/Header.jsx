@@ -25,16 +25,20 @@ function GearIcon() {
   );
 }
 
-export default function Header() {
+export default function Header({ status, statusLabel }) {
   return (
     <header className="header">
       <div className="header-brand">
         <LeafIcon />
         <h1>Plant light tracker</h1>
       </div>
-      <div className="header-status">
-        <span className="status-dot" aria-hidden="true" />
-        <span className="status-text">ESP32 online</span>
+      <div className="header-actions">
+        {status && (
+          <span className={`header-status-pill header-status-${status}`}>
+            <span className="status-dot" aria-hidden="true" />
+            <span>{statusLabel}</span>
+          </span>
+        )}
         <button type="button" className="icon-btn" aria-label="Notifications"><BellIcon /></button>
         <button type="button" className="icon-btn" aria-label="Settings"><GearIcon /></button>
       </div>
