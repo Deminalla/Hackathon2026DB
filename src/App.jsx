@@ -60,6 +60,19 @@ export default function App() {
         <DeviceDetail
           device={openDevice}
           onBack={() => setView("list")}
+          onDelete={() => {
+            const ok = window.confirm(
+              `Delete "${openDevice.name}"? This can't be undone.`,
+            );
+            if (!ok) return;
+            setDevices((prev) => prev.filter((d) => d.id !== openDevice.id));
+            if (selectedId === openDevice.id) {
+              const fallback = devices.find((d) => d.id !== openDevice.id);
+              setSelectedId(fallback ? fallback.id : null);
+            }
+            setOpenId(null);
+            setView("list");
+          }}
         />
       );
     }

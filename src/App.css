@@ -231,6 +231,33 @@
 }
 .btn-primary:hover { background: #258a66; border-color: #258a66; }
 
+/* Detail-view delete */
+.detail-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 4px 0;
+  margin-top: 4px;
+  border-top: 1px solid var(--border);
+}
+.btn-danger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--danger);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s;
+}
+.btn-danger:hover {
+  background: var(--danger-soft);
+  border-color: var(--danger);
+}
+
 @media (max-width: 480px) {
   .icon-picker { grid-template-columns: repeat(3, 1fr); }
   .form-actions { flex-direction: column-reverse; }
