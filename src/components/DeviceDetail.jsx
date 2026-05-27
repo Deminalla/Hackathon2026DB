@@ -80,14 +80,14 @@ function capitalize(s) {
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
-export default function DeviceDetail({ device, onBack, onDelete }) {
-  const offline = device.status === "offline";
-  const headerLabel = offline ? "ESP32 offline" : "ESP32 online";
+export default function DeviceDetail({ device, brokerStatus, onBack, onDelete }) {
+  const hasReadings =
+    device.current?.lightPct != null && (device.history24h?.length ?? 0) > 0;
 
   return (
     <div className="page">
       <div className="dashboard">
-        <Header status={device.status} statusLabel={headerLabel} />
+        <Header brokerStatus={brokerStatus} />
         <button type="button" className="back-btn" onClick={onBack}>
           <ArrowLeftIcon /> Back to devices
         </button>
@@ -99,9 +99,11 @@ export default function DeviceDetail({ device, onBack, onDelete }) {
           </div>
         </div>
 
-        {offline ? (
+        {!hasReadings ? (
           <div className="offline-notice">
-            This device is offline. Reconnect the ESP32 to see fresh readings.
+            {device.deviceId
+              ? `Waiting for the first reading from "${device.deviceId}"…`
+              : "This device isn't paired with an ESP32 yet."}
           </div>
         ) : (
           <>
@@ -126,9 +128,13 @@ export default function DeviceDetail({ device, onBack, onDelete }) {
               <MetricCard
                 icon={<ClockIcon />}
                 label="Last read"
-                value={device.lastReadAgoMin}
-                unit="min"
-                caption={`ago · every ${pollIntervalMin} min`}
+                value={device.lastReadAgoMin ?? "—"}
+                unit={device.lastReadAgoMin != null ? "min" : ""}
+                caption={
+                  device.lastReadAgoMin != null
+                    ? `ago · every ${pollIntervalMin} min`
+                    : "no readings yet"
+                }
               />
             </section>
             <LightHistoryChart data={device.history24h} />

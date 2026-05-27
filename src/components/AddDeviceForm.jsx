@@ -19,7 +19,7 @@ const ICON_OPTIONS = [
   { value: "cactus",   label: "Cactus / succulent" },
 ];
 
-export default function AddDeviceForm({ onSubmit, onCancel }) {
+export default function AddDeviceForm({ brokerStatus, onSubmit, onCancel }) {
   const [name, setName] = useState("");
   const [location, setLocation] = useState("");
   const [icon, setIcon] = useState("monstera");
@@ -46,7 +46,7 @@ export default function AddDeviceForm({ onSubmit, onCancel }) {
   return (
     <div className="page">
       <form className="dashboard" onSubmit={handleSubmit} noValidate>
-        <Header />
+        <Header brokerStatus={brokerStatus} />
         <button type="button" className="back-btn" onClick={onCancel}>
           <ArrowLeftIcon /> Back to devices
         </button>

@@ -48,32 +48,21 @@ export const pollIntervalMin = 5;
 
 export function createDevice({ name, location, icon, deviceId }) {
   const id = `dev-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`;
-  const hasSensor = Boolean(deviceId && deviceId.trim());
-  if (!hasSensor) {
-    return {
-      id,
-      name,
-      location,
-      icon,
-      status: "offline",
-      current: { lightPct: null, tempC: null },
-      lastReadAgoMin: null,
-      history24h: [],
-      recent: [],
-    };
-  }
-  // Sensor bound — seed with neutral placeholders until the real ESP32 reports in.
-  const initLight = 50;
-  const initTemp = 22;
+  const trimmedDeviceId = (deviceId || "").trim();
+  // New devices start with no readings — the first MQTT message hydrates them.
+  // Without a deviceId, the MQTT layer has nothing to route to, so the card
+  // stays inert (and offline) until paired.
   return {
     id,
+    deviceId: trimmedDeviceId || null,
     name,
     location,
     icon,
-    status: "online",
-    current: { lightPct: initLight, tempC: initTemp },
-    lastReadAgoMin: 0,
-    history24h: makeHistory(initLight, initTemp),
-    recent: makeRecent(initLight, initTemp),
+    status: "offline",
+    current: { lightPct: null, tempC: null },
+    lastSeenAt: null,
+    lastReadAgoMin: null,
+    history24h: [],
+    recent: [],
   };
 }

@@ -58,7 +58,7 @@
 }
 .icon-btn:hover { background: var(--surface); color: var(--ink); }
 
-/* Header status pill (detail view only) */
+/* Header status pill */
 .header-status-pill {
   display: inline-flex;
   align-items: center;
@@ -66,10 +66,22 @@
   font-size: 13px;
   color: var(--ink-muted);
   margin-right: 6px;
+  padding: 2px 4px;
 }
 .header-status-online  .status-dot { background: var(--green); }
 .header-status-warning .status-dot { background: var(--amber); }
 .header-status-offline .status-dot { background: #b4b1a6; }
+
+/* MQTT broker pill in the global header */
+.broker-pill { padding: 4px 10px; border-radius: 999px; background: var(--surface); }
+.broker-green  .status-dot { background: var(--green); }
+.broker-amber  .status-dot { background: var(--amber); animation: broker-pulse 1.4s ease-in-out infinite; }
+.broker-danger .status-dot { background: var(--danger); }
+.broker-muted  .status-dot { background: #b4b1a6; }
+@keyframes broker-pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.4; }
+}
 
 /* Detail view: back button + hero */
 .back-btn {

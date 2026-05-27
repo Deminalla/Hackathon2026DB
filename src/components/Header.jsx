@@ -25,7 +25,25 @@ function GearIcon() {
   );
 }
 
-export default function Header({ status, statusLabel }) {
+const BROKER_LABELS = {
+  connecting:   { label: "Connecting…",      tone: "amber"  },
+  connected:    { label: "Broker connected", tone: "green"  },
+  reconnecting: { label: "Reconnecting…",    tone: "amber"  },
+  disconnected: { label: "Disconnected",     tone: "muted"  },
+  error:        { label: "Connection error", tone: "danger" },
+};
+
+function BrokerStatusPill({ status }) {
+  const s = BROKER_LABELS[status] ?? BROKER_LABELS.disconnected;
+  return (
+    <span className={`header-status-pill broker-pill broker-${s.tone}`} title={`MQTT: ${s.label}`}>
+      <span className="status-dot" aria-hidden="true" />
+      <span>{s.label}</span>
+    </span>
+  );
+}
+
+export default function Header({ brokerStatus }) {
   return (
     <header className="header">
       <div className="header-brand">
@@ -33,12 +51,7 @@ export default function Header({ status, statusLabel }) {
         <h1>Plant light tracker</h1>
       </div>
       <div className="header-actions">
-        {status && (
-          <span className={`header-status-pill header-status-${status}`}>
-            <span className="status-dot" aria-hidden="true" />
-            <span>{statusLabel}</span>
-          </span>
-        )}
+        {brokerStatus && <BrokerStatusPill status={brokerStatus} />}
         <button type="button" className="icon-btn" aria-label="Notifications"><BellIcon /></button>
         <button type="button" className="icon-btn" aria-label="Settings"><GearIcon /></button>
       </div>

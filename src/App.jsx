@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Header from "./components/Header";
 import StatusSummary from "./components/StatusSummary";
 import SearchFilter from "./components/SearchFilter";
@@ -8,6 +8,7 @@ import AddDeviceCard from "./components/AddDeviceCard";
 import DeviceDetail from "./components/DeviceDetail";
 import AddDeviceForm from "./components/AddDeviceForm";
 import { devices as initialDevices, createDevice } from "./data/mockData";
+import { useMqttSensors } from "./lib/mqtt";
 import "./App.css";
 
 export default function App() {
@@ -15,21 +16,42 @@ export default function App() {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("all");
   const [selectedId, setSelectedId] = useState("monstera");
-  const [view, setView] = useState("list"); // "list" | "detail" | "add"
+  const [view, setView] = useState("list");
   const [openId, setOpenId] = useState(null);
+  const [now, setNow] = useState(() => Date.now());
+
+  const brokerStatus = useMqttSensors(setDevices);
+
+  // Tick once every 30 s so the "Last read N min ago" labels refresh while idle.
+  useEffect(() => {
+    const id = setInterval(() => setNow(Date.now()), 30_000);
+    return () => clearInterval(id);
+  }, []);
+
+  // Decorate each device with a derived `lastReadAgoMin`. Seed devices keep
+  // their static value; live devices use the timestamp from MQTT.
+  const liveDevices = useMemo(
+    () =>
+      devices.map((d) =>
+        d.lastSeenAt
+          ? { ...d, lastReadAgoMin: Math.max(0, Math.floor((now - d.lastSeenAt) / 60_000)) }
+          : d,
+      ),
+    [devices, now],
+  );
 
   const counts = useMemo(
     () => ({
-      online:  devices.filter((d) => d.status === "online").length,
-      warning: devices.filter((d) => d.status === "warning").length,
-      offline: devices.filter((d) => d.status === "offline").length,
+      online:  liveDevices.filter((d) => d.status === "online").length,
+      warning: liveDevices.filter((d) => d.status === "warning").length,
+      offline: liveDevices.filter((d) => d.status === "offline").length,
     }),
-    [devices],
+    [liveDevices],
   );
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
-    return devices
+    return liveDevices
       .filter((d) => filter === "all" || d.status === filter)
       .filter(
         (d) =>
@@ -37,11 +59,12 @@ export default function App() {
           d.name.toLowerCase().includes(q) ||
           d.location.toLowerCase().includes(q),
       );
-  }, [devices, search, filter]);
+  }, [liveDevices, search, filter]);
 
   if (view === "add") {
     return (
       <AddDeviceForm
+        brokerStatus={brokerStatus}
         onSubmit={(input) => {
           const newDevice = createDevice(input);
           setDevices((prev) => [...prev, newDevice]);
@@ -54,11 +77,12 @@ export default function App() {
   }
 
   if (view === "detail") {
-    const openDevice = devices.find((d) => d.id === openId);
+    const openDevice = liveDevices.find((d) => d.id === openId);
     if (openDevice) {
       return (
         <DeviceDetail
           device={openDevice}
+          brokerStatus={brokerStatus}
           onBack={() => setView("list")}
           onDelete={() => {
             const ok = window.confirm(
@@ -87,8 +111,8 @@ export default function App() {
   return (
     <div className="page">
       <div className="dashboard">
-        <Header />
-        <StatusSummary counts={counts} total={devices.length} />
+        <Header brokerStatus={brokerStatus} />
+        <StatusSummary counts={counts} total={liveDevices.length} />
         <SearchFilter value={search} onChange={setSearch} />
         <FilterTabs value={filter} onChange={setFilter} />
         <h3 className="section-title">My devices</h3>
