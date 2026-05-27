@@ -55,13 +55,6 @@ export function useMqttSensors(setDevices) {
       const raw = payload.toString();
       console.log("[mqtt] raw", { topic, raw });
 
-      const segments = topic.split("/");
-      if (segments.length < 3) {
-        console.warn("[mqtt] drop: topic has fewer than 3 segments", { topic });
-        return;
-      }
-      const deviceId = segments[segments.length - 1];
-
       let parsed;
       try {
         parsed = JSON.parse(raw);
@@ -71,36 +64,35 @@ export function useMqttSensors(setDevices) {
       }
 
       const lightPct = Number(parsed.light_pct);
-      if (!Number.isFinite(lightPct)) {
-        console.warn("[mqtt] drop: payload has no finite light_pct", { topic, parsed });
+      const tempC    = Number(parsed.temp);
+      if (!Number.isFinite(lightPct) || !Number.isFinite(tempC)) {
+        console.warn("[mqtt] drop: payload missing finite light_pct or temp", { topic, parsed });
         return;
       }
-      const rawTemp = Number(parsed.temp);
-      const tempC = Number.isFinite(rawTemp) ? rawTemp : null;
 
-      console.log("[mqtt] message", { topic, deviceId, payload: parsed });
+      console.log("[mqtt] message", { topic, payload: parsed });
 
       const now = new Date();
       const stamp = hhmm(now);
 
+      // Single-card mode: every valid message updates every device in state
+      // (there's only one). When we re-introduce multi-device routing we'll
+      // bring back the deviceId match here.
       setDevicesRef.current((prev) =>
         prev.map((d) => {
-          if (d.deviceId !== deviceId) return d;
           const prevHistory = d.history24h ?? [];
-          // Preserve last-known temp if this message doesn't include one.
-          const effectiveTemp = tempC ?? d.current?.tempC ?? null;
           return {
             ...d,
             status: "online",
-            current: { lightPct, tempC: effectiveTemp },
+            current: { lightPct, tempC },
             lastSeenAt: now.getTime(),
             recent: [
-              { time: stamp, lightPct, tempC: effectiveTemp },
+              { time: stamp, lightPct, tempC },
               ...(d.recent ?? []),
             ].slice(0, 5),
             history24h: [
               ...prevHistory.slice(-23),
-              { t: "now", lightPct, tempC: effectiveTemp },
+              { t: "now", lightPct, tempC },
             ],
           };
         }),
