@@ -62,6 +62,8 @@ export function useMqttSensors(setDevices) {
       const rawTemp = Number(parsed.temp);
       const tempC = Number.isFinite(rawTemp) ? rawTemp : null;
 
+      console.log("[mqtt] message", { topic, deviceId, payload: parsed });
+
       const now = new Date();
       const stamp = hhmm(now);
 
