@@ -11,6 +11,7 @@ import SettingsModal from "./components/SettingsModal";
 import { devices as initialDevices, createDevice } from "./data/mockData";
 import { useMqttSensors } from "./lib/mqtt";
 import { SOUND_TOPIC } from "./config";
+import { ledColorFromLight } from "./utils/lightStatus";
 import "./App.css";
 
 const SOUND_STORAGE_KEY = "dashboard.soundEnabled";
@@ -34,7 +35,8 @@ export default function App() {
   const handleSoundChange = (next) => {
     setSoundEnabled(next);
     localStorage.setItem(SOUND_STORAGE_KEY, String(next));
-    publish(SOUND_TOPIC, { sound: next }, { qos: 0, retain: true });
+    // No direct publish — the effect below sends the combined
+    // { sound, led_color } payload whenever either input changes.
   };
 
   const openSettings = () => setSettingsOpen(true);
@@ -66,6 +68,22 @@ export default function App() {
     }),
     [liveDevices],
   );
+
+  // Single-card mode: derive the LED color from the primary device's light.
+  // Same string identity across renders when the band doesn't change, so the
+  // effect below only re-fires when the LED color actually transitions
+  // blue ↔ green ↔ red.
+  const ledColor = ledColorFromLight(liveDevices[0]?.current?.lightPct);
+
+  // Combined publish to SOUND_TOPIC. Sends `sound` always (user-controlled
+  // toggle) and `led_color` once we have a reading. Retained so the ESP32
+  // gets the latest state on (re)connect. Fires on mount (initial sync) and
+  // whenever sound or LED color changes.
+  useEffect(() => {
+    const payload = { sound: soundEnabled };
+    if (ledColor) payload.led_color = ledColor;
+    publish(SOUND_TOPIC, payload, { qos: 0, retain: true });
+  }, [soundEnabled, ledColor, publish]);
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();

@@ -14,3 +14,16 @@ export function classify(lightPct) {
   if (lightPct <= 80) return STATUS.bright;
   return STATUS.tooBright;
 }
+
+// LED indicator color sent to the ESP32 to mirror the dashboard's status:
+//   "blue"  = not enough light (dark)
+//   "green" = enough (good/bright)
+//   "red"   = too much (too-bright)
+// Reuses classify() so the bands stay in sync with the rest of the UI.
+export function ledColorFromLight(lightPct) {
+  if (lightPct == null || !Number.isFinite(lightPct)) return null;
+  const status = classify(lightPct);
+  if (status.key === "dark") return "blue";
+  if (status.key === "too-bright") return "red";
+  return "green";
+}
