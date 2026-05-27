@@ -52,19 +52,29 @@ export function useMqttSensors(setDevices) {
     });
 
     client.on("message", (topic, payload) => {
+      const raw = payload.toString();
+      console.log("[mqtt] raw", { topic, raw });
+
       const segments = topic.split("/");
-      if (segments.length < 3) return;
+      if (segments.length < 3) {
+        console.warn("[mqtt] drop: topic has fewer than 3 segments", { topic });
+        return;
+      }
       const deviceId = segments[segments.length - 1];
 
       let parsed;
       try {
-        parsed = JSON.parse(payload.toString());
-      } catch {
-        return; // bad JSON → drop
+        parsed = JSON.parse(raw);
+      } catch (err) {
+        console.warn("[mqtt] drop: payload is not valid JSON", { topic, raw, err: err.message });
+        return;
       }
 
       const lightPct = Number(parsed.light_pct);
-      if (!Number.isFinite(lightPct)) return;          // light_pct is required
+      if (!Number.isFinite(lightPct)) {
+        console.warn("[mqtt] drop: payload has no finite light_pct", { topic, parsed });
+        return;
+      }
       const rawTemp = Number(parsed.temp);
       const tempC = Number.isFinite(rawTemp) ? rawTemp : null;
 
