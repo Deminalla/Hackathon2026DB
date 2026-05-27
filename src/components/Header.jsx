@@ -43,7 +43,7 @@ function BrokerStatusPill({ status }) {
   );
 }
 
-export default function Header({ brokerStatus }) {
+export default function Header({ brokerStatus, onOpenSettings }) {
   return (
     <header className="header">
       <div className="header-brand">
@@ -53,7 +53,7 @@ export default function Header({ brokerStatus }) {
       <div className="header-actions">
         {brokerStatus && <BrokerStatusPill status={brokerStatus} />}
         <button type="button" className="icon-btn" aria-label="Notifications"><BellIcon /></button>
-        <button type="button" className="icon-btn" aria-label="Settings"><GearIcon /></button>
+        <button type="button" className="icon-btn" aria-label="Settings" onClick={onOpenSettings}><GearIcon /></button>
       </div>
     </header>
   );

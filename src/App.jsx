@@ -7,9 +7,13 @@ import DeviceCard from "./components/DeviceCard";
 import AddDeviceCard from "./components/AddDeviceCard";
 import DeviceDetail from "./components/DeviceDetail";
 import AddDeviceForm from "./components/AddDeviceForm";
+import SettingsModal from "./components/SettingsModal";
 import { devices as initialDevices, createDevice } from "./data/mockData";
 import { useMqttSensors } from "./lib/mqtt";
+import { SOUND_TOPIC } from "./config";
 import "./App.css";
+
+const SOUND_STORAGE_KEY = "dashboard.soundEnabled";
 
 export default function App() {
   const [devices, setDevices] = useState(initialDevices);
@@ -19,8 +23,22 @@ export default function App() {
   const [view, setView] = useState("list");
   const [openId, setOpenId] = useState(null);
   const [now, setNow] = useState(() => Date.now());
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const [soundEnabled, setSoundEnabled] = useState(() => {
+    const stored = localStorage.getItem(SOUND_STORAGE_KEY);
+    return stored === null ? true : stored === "true";
+  });
 
-  const brokerStatus = useMqttSensors(setDevices);
+  const { status: brokerStatus, publish } = useMqttSensors(setDevices);
+
+  const handleSoundChange = (next) => {
+    setSoundEnabled(next);
+    localStorage.setItem(SOUND_STORAGE_KEY, String(next));
+    publish(SOUND_TOPIC, { sound: next }, { qos: 0, retain: true });
+  };
+
+  const openSettings = () => setSettingsOpen(true);
+  const closeSettings = () => setSettingsOpen(false);
 
   // Tick once every 30 s so the "Last read N min ago" labels refresh while idle.
   useEffect(() => {
@@ -61,18 +79,31 @@ export default function App() {
       );
   }, [liveDevices, search, filter]);
 
+  const settingsModal = (
+    <SettingsModal
+      open={settingsOpen}
+      soundEnabled={soundEnabled}
+      onSoundChange={handleSoundChange}
+      onClose={closeSettings}
+    />
+  );
+
   if (view === "add") {
     return (
-      <AddDeviceForm
-        brokerStatus={brokerStatus}
-        onSubmit={(input) => {
-          const newDevice = createDevice(input);
-          setDevices((prev) => [...prev, newDevice]);
-          setSelectedId(newDevice.id);
-          setView("list");
-        }}
-        onCancel={() => setView("list")}
-      />
+      <>
+        <AddDeviceForm
+          brokerStatus={brokerStatus}
+          onOpenSettings={openSettings}
+          onSubmit={(input) => {
+            const newDevice = createDevice(input);
+            setDevices((prev) => [...prev, newDevice]);
+            setSelectedId(newDevice.id);
+            setView("list");
+          }}
+          onCancel={() => setView("list")}
+        />
+        {settingsModal}
+      </>
     );
   }
 
@@ -80,24 +111,28 @@ export default function App() {
     const openDevice = liveDevices.find((d) => d.id === openId);
     if (openDevice) {
       return (
-        <DeviceDetail
-          device={openDevice}
-          brokerStatus={brokerStatus}
-          onBack={() => setView("list")}
-          onDelete={() => {
-            const ok = window.confirm(
-              `Delete "${openDevice.name}"? This can't be undone.`,
-            );
-            if (!ok) return;
-            setDevices((prev) => prev.filter((d) => d.id !== openDevice.id));
-            if (selectedId === openDevice.id) {
-              const fallback = devices.find((d) => d.id !== openDevice.id);
-              setSelectedId(fallback ? fallback.id : null);
-            }
-            setOpenId(null);
-            setView("list");
-          }}
-        />
+        <>
+          <DeviceDetail
+            device={openDevice}
+            brokerStatus={brokerStatus}
+            onOpenSettings={openSettings}
+            onBack={() => setView("list")}
+            onDelete={() => {
+              const ok = window.confirm(
+                `Delete "${openDevice.name}"? This can't be undone.`,
+              );
+              if (!ok) return;
+              setDevices((prev) => prev.filter((d) => d.id !== openDevice.id));
+              if (selectedId === openDevice.id) {
+                const fallback = devices.find((d) => d.id !== openDevice.id);
+                setSelectedId(fallback ? fallback.id : null);
+              }
+              setOpenId(null);
+              setView("list");
+            }}
+          />
+          {settingsModal}
+        </>
       );
     }
   }
@@ -109,25 +144,28 @@ export default function App() {
   };
 
   return (
-    <div className="page">
-      <div className="dashboard">
-        <Header brokerStatus={brokerStatus} />
-        <StatusSummary counts={counts} total={liveDevices.length} />
-        <SearchFilter value={search} onChange={setSearch} />
-        <FilterTabs value={filter} onChange={setFilter} />
-        <h3 className="section-title">My devices</h3>
-        <div className="device-grid">
-          {filtered.map((d) => (
-            <DeviceCard
-              key={d.id}
-              device={d}
-              selected={d.id === selectedId}
-              onClick={() => handleOpen(d.id)}
-            />
-          ))}
-          <AddDeviceCard onClick={() => setView("add")} />
+    <>
+      <div className="page">
+        <div className="dashboard">
+          <Header brokerStatus={brokerStatus} onOpenSettings={openSettings} />
+          <StatusSummary counts={counts} total={liveDevices.length} />
+          <SearchFilter value={search} onChange={setSearch} />
+          <FilterTabs value={filter} onChange={setFilter} />
+          <h3 className="section-title">My devices</h3>
+          <div className="device-grid">
+            {filtered.map((d) => (
+              <DeviceCard
+                key={d.id}
+                device={d}
+                selected={d.id === selectedId}
+                onClick={() => handleOpen(d.id)}
+              />
+            ))}
+            <AddDeviceCard onClick={() => setView("add")} />
+          </div>
         </div>
       </div>
-    </div>
+      {settingsModal}
+    </>
   );
 }

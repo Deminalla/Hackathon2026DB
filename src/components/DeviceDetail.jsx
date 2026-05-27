@@ -80,14 +80,14 @@ function capitalize(s) {
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
-export default function DeviceDetail({ device, brokerStatus, onBack, onDelete }) {
+export default function DeviceDetail({ device, brokerStatus, onBack, onDelete, onOpenSettings }) {
   const hasReadings =
     device.current?.lightPct != null && (device.history24h?.length ?? 0) > 0;
 
   return (
     <div className="page">
       <div className="dashboard">
-        <Header brokerStatus={brokerStatus} />
+        <Header brokerStatus={brokerStatus} onOpenSettings={onOpenSettings} />
         <button type="button" className="back-btn" onClick={onBack}>
           <ArrowLeftIcon /> Back to devices
         </button>

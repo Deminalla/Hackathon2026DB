@@ -14,3 +14,8 @@ export const TOPIC_PATTERN = env.VITE_MQTT_TOPIC_PATTERN || "hackathon/sensors/+
 // no credentials are configured.
 export const MQTT_USERNAME = env.VITE_MQTT_USERNAME || undefined;
 export const MQTT_PASSWORD = env.VITE_MQTT_PASSWORD || undefined;
+
+// Outbound control topic for the global "alert sound" toggle in the settings
+// modal. Published with retain:true so any ESP32 connecting later immediately
+// receives the current desired state.
+export const SOUND_TOPIC = "the_force";

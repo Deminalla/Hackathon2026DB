@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import mqtt from "mqtt";
 import { BROKER_URL, TOPIC_PATTERN, MQTT_USERNAME, MQTT_PASSWORD } from "../config";
 
@@ -10,11 +10,16 @@ function hhmm(date) {
 // list via setDevices. Unknown device ids are dropped (discovery is opt-in:
 // devices must be registered via the Add Device form with a matching Device ID).
 //
-// Returns a status string suitable for the header indicator:
-//   "connecting" | "connected" | "reconnecting" | "disconnected" | "error"
+// Returns:
+//   status:  "connecting" | "connected" | "reconnecting" | "disconnected" | "error"
+//   publish(topic, payload, opts?): JSON-encodes payload and forwards to the
+//     underlying client. Default opts: { qos: 0, retain: false }. While the
+//     broker is offline, mqtt.js buffers outbound messages and flushes them on
+//     reconnect, so callers don't need to gate on `status`.
 export function useMqttSensors(setDevices) {
   const [status, setStatus] = useState("connecting");
   const setDevicesRef = useRef(setDevices);
+  const clientRef = useRef(null);
 
   // Keep the ref pointing at the latest setter so the message handler (registered
   // only once) always uses the current state-setter closure.
@@ -30,6 +35,7 @@ export function useMqttSensors(setDevices) {
       username: MQTT_USERNAME,
       password: MQTT_PASSWORD,
     });
+    clientRef.current = client;
 
     client.on("connect", () => {
       setStatus("connected");
@@ -92,9 +98,20 @@ export function useMqttSensors(setDevices) {
     });
 
     return () => {
+      clientRef.current = null;
       client.end(true);
     };
   }, []);
 
-  return status;
+  const publish = useCallback((topic, payload, opts = {}) => {
+    const client = clientRef.current;
+    if (!client) return false;
+    const json = JSON.stringify(payload);
+    client.publish(topic, json, { qos: 0, retain: false, ...opts }, (err) => {
+      if (err) console.error("[mqtt] publish failed:", topic, err);
+    });
+    return true;
+  }, []);
+
+  return { status, publish };
 }
