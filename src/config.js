@@ -21,4 +21,4 @@ export const MQTT_PASSWORD = env.VITE_MQTT_PASSWORD || undefined;
 // Outbound control topic for the global "alert sound" toggle in the settings
 // modal. Published with retain:true so any ESP32 connecting later immediately
 // receives the current desired state.
-export const SOUND_TOPIC = "the_force";
+export const SOUND_TOPIC = "sigita_liepe/the_force";
