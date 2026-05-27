@@ -323,7 +323,12 @@
   justify-content: center;
 }
 .modal-close:hover { background: var(--surface); color: var(--ink); }
-.modal-body { padding: 16px; }
+.modal-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
 
 .setting-row {
   display: grid;

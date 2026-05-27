@@ -26,9 +26,17 @@ function Toggle({ checked, onChange, label, id }) {
   );
 }
 
-export default function SettingsModal({ open, soundEnabled, onSoundChange, onClose }) {
+export default function SettingsModal({
+  open,
+  soundEnabled,
+  onSoundChange,
+  lostMyDevice,
+  onLostMyDeviceChange,
+  onClose,
+}) {
   const titleId = useId();
   const soundId = useId();
+  const lostId = useId();
   const closeBtnRef = useRef(null);
 
   // Esc closes.
@@ -80,6 +88,18 @@ export default function SettingsModal({ open, soundEnabled, onSoundChange, onClo
               checked={soundEnabled}
               onChange={onSoundChange}
               label="Sound"
+            />
+          </div>
+          <div className="setting-row">
+            <label htmlFor={lostId} className="setting-label">
+              <span className="setting-label-title">I lost my plant</span>
+              <span className="setting-label-hint">Triggers the locator buzz / LED on the ESP32 until turned off.</span>
+            </label>
+            <Toggle
+              id={lostId}
+              checked={lostMyDevice}
+              onChange={onLostMyDeviceChange}
+              label="I lost my plant"
             />
           </div>
         </div>

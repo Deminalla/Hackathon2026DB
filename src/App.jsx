@@ -15,6 +15,7 @@ import { ledColorFromLight } from "./utils/lightStatus";
 import "./App.css";
 
 const SOUND_STORAGE_KEY = "dashboard.soundEnabled";
+const LOST_MY_DEVICE_STORAGE_KEY = "dashboard.lostMyDevice";
 
 export default function App() {
   const [devices, setDevices] = useState(initialDevices);
@@ -29,6 +30,10 @@ export default function App() {
     const stored = localStorage.getItem(SOUND_STORAGE_KEY);
     return stored === null ? true : stored === "true";
   });
+  const [lostMyDevice, setLostMyDevice] = useState(() => {
+    const stored = localStorage.getItem(LOST_MY_DEVICE_STORAGE_KEY);
+    return stored === null ? false : stored === "true";
+  });
 
   const { status: brokerStatus, publish } = useMqttSensors(setDevices);
 
@@ -36,7 +41,12 @@ export default function App() {
     setSoundEnabled(next);
     localStorage.setItem(SOUND_STORAGE_KEY, String(next));
     // No direct publish — the effect below sends the combined
-    // { sound, led_color } payload whenever either input changes.
+    // { sound, led_color, lost_my_device } payload whenever any input changes.
+  };
+
+  const handleLostMyDeviceChange = (next) => {
+    setLostMyDevice(next);
+    localStorage.setItem(LOST_MY_DEVICE_STORAGE_KEY, String(next));
   };
 
   const openSettings = () => setSettingsOpen(true);
@@ -75,15 +85,15 @@ export default function App() {
   // blue ↔ green ↔ red.
   const ledColor = ledColorFromLight(liveDevices[0]?.current?.lightPct);
 
-  // Combined publish to SOUND_TOPIC. Sends `sound` always (user-controlled
-  // toggle) and `led_color` once we have a reading. Retained so the ESP32
-  // gets the latest state on (re)connect. Fires on mount (initial sync) and
-  // whenever sound or LED color changes.
+  // Combined publish to SOUND_TOPIC. Sends `sound` and `lost_my_device`
+  // always (user-controlled toggles) and `led_color` once we have a reading.
+  // Retained so the ESP32 gets the latest state on (re)connect. Fires on
+  // mount (initial sync) and whenever any input changes.
   useEffect(() => {
-    const payload = { sound: soundEnabled };
+    const payload = { sound: soundEnabled, lost_my_device: lostMyDevice };
     if (ledColor) payload.led_color = ledColor;
     publish(SOUND_TOPIC, payload, { qos: 0, retain: true });
-  }, [soundEnabled, ledColor, publish]);
+  }, [soundEnabled, lostMyDevice, ledColor, publish]);
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
@@ -102,6 +112,8 @@ export default function App() {
       open={settingsOpen}
       soundEnabled={soundEnabled}
       onSoundChange={handleSoundChange}
+      lostMyDevice={lostMyDevice}
+      onLostMyDeviceChange={handleLostMyDeviceChange}
       onClose={closeSettings}
     />
   );
