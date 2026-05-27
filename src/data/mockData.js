@@ -7,9 +7,9 @@ export const devices = [
   {
     id: "primary",
     deviceId: null,                  // routing no longer uses this
-    name: "My plant",
-    location: "Home",
-    icon: "monstera",
+    name: "Cactus",
+    location: "Living Room",
+    icon: "cactus",
     status: "offline",
     current: { lightPct: null, tempC: null },
     lastSeenAt: null,
