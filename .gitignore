@@ -29,3 +29,5 @@ dist-ssr
 # ESP32 build artifacts (firmware in ESP/)
 ESP/.pio
 ESP/include/secrets.h
+ESP/mosquitto/data/
+ESP/mosquitto/log/

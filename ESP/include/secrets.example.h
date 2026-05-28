@@ -13,9 +13,9 @@
 // Local Mosquitto: MQTT_USE_TLS 0, port 1883, MQTT_USERNAME "" and MQTT_PASSWORD "".
 // HiveMQ Cloud: MQTT_USE_TLS 1, port 8883, cluster hostname, credentials.
 #define MQTT_USE_TLS 1
-#define MQTT_HOST "104ebbfbd174457e81fe0e3880e2d779.s1.eu.hivemq.cloud"
+#define MQTT_HOST "YOUR_CLUSTER.s1.eu.hivemq.cloud"
 #define MQTT_PORT 8883
-#define MQTT_USERNAME "darkside"
+#define MQTT_USERNAME "your-hivemq-username"
 #define MQTT_PASSWORD "your-hivemq-password"
 #define MQTT_CLIENT_ID "ESP32Client-1000"
 

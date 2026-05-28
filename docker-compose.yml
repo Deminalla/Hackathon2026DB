@@ -1,0 +1,16 @@
+# Local MQTT broker for development. From repo root:
+#   docker compose up -d
+# Then: npm run proxy && npm run dev
+# See docs/LOCAL_DEV.md and docs/MQTT.md
+
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2
+    container_name: hackathon-mosquitto
+    restart: unless-stopped
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./ESP/mosquitto/config:/mosquitto/config
+      - ./ESP/mosquitto/data:/mosquitto/data
+      - ./ESP/mosquitto/log:/mosquitto/log

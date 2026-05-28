@@ -12,7 +12,7 @@
 // Env (all optional, sensible defaults shown):
 //   BRIDGE_PORT          9001         local port the bridge listens on
 //   BRIDGE_HOST          127.0.0.1    interface to bind (localhost-only by default)
-//   MQTT_UPSTREAM_HOST   10.6.10.36   real broker host
+//   MQTT_UPSTREAM_HOST   127.0.0.1    real broker host (Docker Mosquitto)
 //   MQTT_UPSTREAM_PORT   1883         real broker TCP port
 
 import net from "node:net";
@@ -20,7 +20,7 @@ import { WebSocketServer } from "ws";
 
 const BRIDGE_PORT        = Number(process.env.BRIDGE_PORT)        || 9001;
 const BRIDGE_HOST        =        process.env.BRIDGE_HOST          || "127.0.0.1";
-const MQTT_UPSTREAM_HOST =        process.env.MQTT_UPSTREAM_HOST   || "10.6.10.36";
+const MQTT_UPSTREAM_HOST =        process.env.MQTT_UPSTREAM_HOST   || "127.0.0.1";
 const MQTT_UPSTREAM_PORT = Number(process.env.MQTT_UPSTREAM_PORT) || 1883;
 
 const wss = new WebSocketServer({

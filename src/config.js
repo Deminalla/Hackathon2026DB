@@ -7,11 +7,9 @@
 
 const env = import.meta.env;
 
-export const BROKER_URL = env.VITE_MQTT_BROKER_URL || "ws://10.6.10.36:9001";
-// `#` is the multi-level wildcard. In single-card mode we don't care about
-// the exact topic shape — any message under `hackathon/` updates the one card.
-// Override via VITE_MQTT_TOPIC_PATTERN if the firmware uses a different prefix.
-export const TOPIC_PATTERN = env.VITE_MQTT_TOPIC_PATTERN || "hackathon/#";
+export const BROKER_URL = env.VITE_MQTT_BROKER_URL || "ws://localhost:9001";
+// Subscribe topic — must match ESP MQTT_TOPIC_PUBLISH (default: darkside).
+export const TOPIC_PATTERN = env.VITE_MQTT_TOPIC_PATTERN || "darkside";
 
 // undefined (not empty string) so mqtt.js omits the auth packet entirely when
 // no credentials are configured.
