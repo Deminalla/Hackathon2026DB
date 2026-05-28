@@ -1,16 +1,39 @@
-# React + Vite
+# Hackathon 2026 — plant sensor dashboard + ESP32
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Monorepo for the hackathon demo: **React dashboard** (this folder) and **ESP32 firmware** ([ESP/](ESP/)).
 
-Currently, two official plugins are available:
+| Part | Folder | Deploy |
+|------|--------|--------|
+| Web UI | `.` (Vite + React) | [Vercel](DEPLOY.md) + HiveMQ WebSocket |
+| ESP32 | [ESP/](ESP/) | PlatformIO USB flash |
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Cloud demo (phone hotspot)
 
-## React Compiler
+1. [HiveMQ Cloud](DEPLOY.md#1-create-a-cloud-mqtt-broker-hivemq-cloud) + credentials  
+2. Flash ESP: [ESP/README.md](ESP/README.md)  
+3. Deploy UI: [DEPLOY.md](DEPLOY.md#3-deploy-the-frontend-vercel)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Live app example: `https://hackathon2026db-esp.vercel.app` (if deployed).
 
-## Expanding the ESLint configuration
+## Local development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Dashboard
+npm install
+cp .env.example .env.local
+npm run dev
+
+# Optional: local MQTT (from ESP/)
+cd ESP && docker compose up -d
+npm run proxy   # from repo root, if using local broker
+```
+
+## Repository layout
+
+```text
+├── ESP/                 # PlatformIO firmware (sensors, MQTT, speaker)
+├── src/                 # React app
+├── proxy/               # Local MQTT WebSocket bridge (dev only)
+├── DEPLOY.md            # HiveMQ + Vercel walkthrough
+└── .env.production.example
+```

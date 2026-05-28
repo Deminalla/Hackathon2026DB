@@ -28,6 +28,15 @@ wss://YOUR_CLUSTER.s1.eu.hivemq.cloud:8884/mqtt
 
 ## 2. Flash the ESP32
 
+Firmware lives in **[ESP/](ESP/)** (PlatformIO). See [ESP/README.md](ESP/README.md) for wiring and pins.
+
+```bash
+cd ESP
+cp include/secrets.example.h include/secrets.h
+# edit include/secrets.h
+pio run -e esp32dev -t upload
+```
+
 Edit `include/secrets.h` (copy from `secrets.example.h` if needed):
 
 ```c
@@ -52,14 +61,7 @@ Keep topics as-is unless you change firmware:
 #define MQTT_TOPIC_SUBSCRIBE "sigita_liepe/the_force"
 ```
 
-Build and upload:
-
-```bash
-cd c:/Users/jonas/Projects/esp
-pio run -t upload
-```
-
-Serial monitor: look for Wi‑Fi connected, then `MQTT connection... connected`.
+Then run `pio run -e esp32dev -t upload` from `ESP/`. Serial monitor: Wi‑Fi connected, then `MQTT connection... connected`.
 
 ## 3. Deploy the frontend (Vercel)
 

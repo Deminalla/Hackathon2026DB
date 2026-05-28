@@ -25,3 +25,7 @@ dist-ssr
 *.sln
 *.sw?
 .vercel
+
+# ESP32 build artifacts (firmware in ESP/)
+ESP/.pio
+ESP/include/secrets.h
