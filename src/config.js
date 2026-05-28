@@ -15,8 +15,9 @@ export const TOPIC_PATTERN = env.VITE_MQTT_TOPIC_PATTERN || "hackathon/#";
 
 // undefined (not empty string) so mqtt.js omits the auth packet entirely when
 // no credentials are configured.
-export const MQTT_USERNAME = env.VITE_MQTT_USERNAME || undefined;
-export const MQTT_PASSWORD = env.VITE_MQTT_PASSWORD || undefined;
+const trim = (v) => (typeof v === "string" ? v.trim() : "");
+export const MQTT_USERNAME = trim(env.VITE_MQTT_USERNAME) || undefined;
+export const MQTT_PASSWORD = trim(env.VITE_MQTT_PASSWORD) || undefined;
 
 // Outbound control topic for the global "alert sound" toggle in the settings
 // modal. Published with retain:true so any ESP32 connecting later immediately

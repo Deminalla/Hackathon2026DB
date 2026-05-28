@@ -81,7 +81,7 @@ export default function SettingsModal({
           <div className="setting-row">
             <label htmlFor={soundId} className="setting-label">
               <span className="setting-label-title">Sound</span>
-              <span className="setting-label-hint">Plays alert tones on the ESP32 when readings cross a threshold.</span>
+              <span className="setting-label-hint">Mario theme on the ESP32 while enabled (MQTT only).</span>
             </label>
             <Toggle
               id={soundId}
@@ -93,7 +93,7 @@ export default function SettingsModal({
           <div className="setting-row">
             <label htmlFor={lostId} className="setting-label">
               <span className="setting-label-title">I lost my plant</span>
-              <span className="setting-label-hint">Triggers the locator buzz / LED on the ESP32 until turned off.</span>
+              <span className="setting-label-hint">Doom alarm on the ESP32, even if sound is off (MQTT only).</span>
             </label>
             <Toggle
               id={lostId}

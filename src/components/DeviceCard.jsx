@@ -1,5 +1,6 @@
 import { PlantIcon } from "./PlantIcons";
 import { classify } from "../utils/lightStatus";
+import { formatLightPct, formatTempCWithUnit } from "../utils/formatSensor";
 
 function PinIcon() {
   return (
@@ -40,8 +41,8 @@ function deviceBadge(device) {
 export default function DeviceCard({ device, selected, onClick }) {
   const badge = deviceBadge(device);
   const offline = device.status === "offline";
-  const lightVal = device.current.lightPct == null ? "—" : `${device.current.lightPct}%`;
-  const tempVal = device.current.tempC == null ? "—" : `${device.current.tempC}°C`;
+  const lightVal = device.current.lightPct == null ? "—" : `${formatLightPct(device.current.lightPct)}%`;
+  const tempVal = formatTempCWithUnit(device.current.tempC);
 
   return (
     <button

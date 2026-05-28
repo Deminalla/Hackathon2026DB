@@ -1,4 +1,5 @@
 import { classify } from "../utils/lightStatus";
+import { formatLightPct, formatTempC } from "../utils/formatSensor";
 
 function ListIcon() {
   return (
@@ -27,7 +28,7 @@ export default function RecentReadings({ entries }) {
             <li key={e.time} className="recent-row">
               <span className="recent-time">{e.time}</span>
               <span className="recent-value">
-                {e.lightPct}% · {e.tempC}°C
+                {formatLightPct(e.lightPct)}% · {formatTempC(e.tempC)}°C
               </span>
               <span className={`pill pill-${status.tone}`}>{status.label}</span>
             </li>

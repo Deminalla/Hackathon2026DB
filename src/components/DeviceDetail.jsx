@@ -6,6 +6,7 @@ import RecentReadings from "./RecentReadings";
 import { PlantIcon } from "./PlantIcons";
 import { classify } from "../utils/lightStatus";
 import { pollIntervalMin } from "../data/mockData";
+import { formatTempC } from "../utils/formatSensor";
 
 function ArrowLeftIcon() {
   return (
@@ -121,8 +122,8 @@ export default function DeviceDetail({ device, brokerStatus, onBack, onDelete, o
               <MetricCard
                 icon={<ThermIcon />}
                 label="Temperature"
-                value={device.current.tempC}
-                unit="°C"
+                value={formatTempC(device.current.tempC)}
+                unit={device.current.tempC == null ? "" : "°C"}
                 badge={tempBadge(device.current.tempC)}
               />
               <MetricCard

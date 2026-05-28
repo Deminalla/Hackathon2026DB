@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import {
   ResponsiveContainer,
   LineChart,
@@ -9,6 +10,7 @@ import {
   ReferenceDot,
   Label,
 } from "recharts";
+import { formatTempC } from "../utils/formatSensor";
 
 const COLORS = {
   green:    "#2EA37A",
@@ -18,15 +20,21 @@ const COLORS = {
   border:   "#E5DFD0",
 };
 
-const AXIS_TICKS = ["00:00", "06:00", "12:00", "18:00", "now"];
+function formatAxisTime(t) {
+  const d = new Date(Number(t));
+  if (Number.isNaN(d.getTime())) return String(t);
+  const pad = (n) => String(n).padStart(2, "0");
+  return `${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
+}
 
 function ChartTooltip({ active, payload, label }) {
   if (!active || !payload?.length) return null;
   const light = payload.find((p) => p.dataKey === "lightPct");
   const temp  = payload.find((p) => p.dataKey === "tempC");
+  const timeLabel = formatAxisTime(label);
   return (
     <div className="chart-tooltip">
-      <div className="chart-tooltip-time">{label}</div>
+      <div className="chart-tooltip-time">{timeLabel}</div>
       {light && (
         <div className="chart-tooltip-row">
           <span className="legend-dot legend-light" />
@@ -38,7 +46,7 @@ function ChartTooltip({ active, payload, label }) {
         <div className="chart-tooltip-row">
           <span className="legend-dot legend-temp" />
           <span>temp</span>
-          <span className="chart-tooltip-value">{temp.value}°C</span>
+          <span className="chart-tooltip-value">{formatTempC(temp.value)}°C</span>
         </div>
       )}
     </div>
@@ -46,13 +54,26 @@ function ChartTooltip({ active, payload, label }) {
 }
 
 export default function LightHistoryChart({ data }) {
+  const temps = useMemo(
+    () => (data ?? []).map((d) => d.tempC).filter((v) => Number.isFinite(v)),
+    [data],
+  );
+
+  const tempDomain = useMemo(() => {
+    if (temps.length === 0) return [18, 32];
+    const min = Math.min(...temps);
+    const max = Math.max(...temps);
+    const pad = Math.max(0.5, (max - min) * 0.25);
+    return [min - pad, max + pad];
+  }, [temps]);
+
   if (!data?.length) return null;
   const last = data[data.length - 1];
 
   return (
     <section className="chart-card">
       <header className="chart-head">
-        <h2>Light history — last 24 h</h2>
+        <h2>Live sensor history</h2>
         <div className="chart-legend">
           <span><span className="legend-dot legend-light" /> light %</span>
           <span><span className="legend-dot legend-temp" /> temp °C</span>
@@ -68,11 +89,13 @@ export default function LightHistoryChart({ data }) {
             />
             <XAxis
               dataKey="t"
-              ticks={AXIS_TICKS}
-              tick={{ fill: COLORS.inkMuted, fontSize: 11 }}
+              type="number"
+              domain={["dataMin", "dataMax"]}
+              tickFormatter={formatAxisTime}
+              tick={{ fill: COLORS.inkMuted, fontSize: 10 }}
               axisLine={false}
               tickLine={false}
-              interval="preserveStartEnd"
+              minTickGap={40}
             />
             <YAxis
               yAxisId="light"
@@ -84,7 +107,7 @@ export default function LightHistoryChart({ data }) {
               tickFormatter={(v) => `${v}%`}
               width={36}
             />
-            <YAxis yAxisId="temp" orientation="right" domain={[15, 35]} hide />
+            <YAxis yAxisId="temp" orientation="right" domain={tempDomain} hide />
             <Tooltip
               content={<ChartTooltip />}
               cursor={{ stroke: COLORS.border, strokeDasharray: "3 3" }}
@@ -112,7 +135,7 @@ export default function LightHistoryChart({ data }) {
             />
             <ReferenceDot
               yAxisId="light"
-              x="now"
+              x={last.t}
               y={last.lightPct}
               r={5}
               fill={COLORS.green}

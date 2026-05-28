@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "proxy": "node proxy/mqtt-bridge.mjs"
+    "proxy": "node --env-file=.env.local proxy/mqtt-bridge.mjs"
   },
   "dependencies": {
     "mqtt": "^5.15.1",

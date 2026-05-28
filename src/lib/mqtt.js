@@ -95,8 +95,8 @@ export function useMqttSensors(setDevices) {
               ...(d.recent ?? []),
             ].slice(0, 5),
             history24h: [
-              ...prevHistory.slice(-23),
-              { t: "now", lightPct, tempC },
+              ...prevHistory.slice(-47),
+              { t: now.getTime(), lightPct, tempC },
             ],
           };
         }),
