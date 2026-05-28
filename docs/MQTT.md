@@ -1,6 +1,8 @@
 # MQTT broker hosting
 
-The ESP32 and the browser dashboard must talk to the **same MQTT broker**. You can host it in the cloud (best for demo day) or on your laptop (best for development).
+The ESP32 and the browser dashboard must talk to the **same MQTT broker**.
+
+**This project uses hosted MQTT (HiveMQ Cloud) for the demo and production deploy.** The dashboard connects with **WSS** directly to the broker — no `npm run proxy`. Optional local Mosquitto + proxy is only for home development ([LOCAL_DEV.md](LOCAL_DEV.md)).
 
 ## Ports and protocols
 

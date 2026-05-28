@@ -1,6 +1,8 @@
-# Local development
+# Local development (optional)
 
-Run the dashboard on your laptop with a **local Mosquitto** broker and the **WebSocket proxy**. The ESP connects to your laptop's **LAN IP** on port 1883.
+**Not used for demo day or Vercel.** For production, use [hosted HiveMQ](MQTT.md#option-a-hivemq-cloud-hosted) and connect the browser via `wss://` (no proxy).
+
+This guide is only if you want a **local Mosquitto** broker on your laptop and the **WebSocket proxy** (`npm run proxy`). The ESP connects to your laptop's **LAN IP** on port 1883.
 
 ## 1. Install dependencies
 
